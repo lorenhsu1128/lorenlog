@@ -1,0 +1,6910 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,400italic,700,700italic);
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 6, ../sass/_base.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 9, ../sass/_base.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../sass/_base.scss */
+body, form, fieldset, legend, input, select, textarea, button {
+  margin: 0;
+}
+
+/* line 15, ../sass/_base.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 16, ../sass/_base.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 19, ../sass/_base.scss */
+[hidden], template {
+  display: none;
+}
+
+/* line 22, ../sass/_base.scss */
+img {
+  border: 0;
+}
+
+/* line 23, ../sass/_base.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 1, ../sass/_fonts.scss */
+html {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-family: Helvetica, "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.125rem;
+  line-height: 1.6875rem;
+  -ms-text-size-adjust: 1.125rem;
+  -webkit-text-size-adjust: 1.125rem;
+}
+
+/* line 11, ../sass/_fonts.scss */
+html, button, input, select, textarea {
+  font-family: Helvetica, "Source Sans Pro", sans-serif;
+}
+
+/* line 15, ../sass/_fonts.scss */
+br {
+  line-height: 0.84375rem;
+}
+
+/* line 19, ../sass/_fonts.scss */
+p {
+  line-height: 1.6875rem;
+}
+
+/* line 23, ../sass/_fonts.scss */
+a {
+  color: black;
+  background: transparent;
+  text-decoration: underline;
+}
+/* line 27, ../sass/_fonts.scss */
+a:active, a:hover {
+  outline: 0;
+  text-decoration: none;
+}
+
+/* line 36, ../sass/_fonts.scss */
+h1, .h1 {
+  font-size: 3.375rem;
+  font-weight: 700;
+  margin-bottom: 1.6875rem;
+  line-height: 4.05rem;
+}
+
+/* line 36, ../sass/_fonts.scss */
+h2, .h2 {
+  font-size: 2.95313rem;
+  font-weight: 700;
+  margin-bottom: 1.6875rem;
+  line-height: 4.05rem;
+}
+
+/* line 36, ../sass/_fonts.scss */
+h3, .h3 {
+  font-size: 2.53125rem;
+  font-weight: 700;
+  margin-bottom: 1.6875rem;
+  line-height: 4.05rem;
+}
+
+/* line 36, ../sass/_fonts.scss */
+h4, .h4 {
+  font-size: 2.10938rem;
+  font-weight: 700;
+  margin-bottom: 1.6875rem;
+  line-height: 2.3625rem;
+}
+
+/* line 36, ../sass/_fonts.scss */
+h5, .h5 {
+  font-size: 1.6875rem;
+  font-weight: 700;
+  margin-bottom: 1.6875rem;
+  line-height: 2.3625rem;
+}
+
+/* line 36, ../sass/_fonts.scss */
+h6, .h6 {
+  font-size: 1.26563rem;
+  font-weight: 700;
+  margin-bottom: 1.6875rem;
+  line-height: 2.3625rem;
+}
+
+/* line 48, ../sass/_fonts.scss */
+ul li {
+  list-style: circle;
+  margin-left: 1.5rem;
+}
+
+/* line 53, ../sass/_fonts.scss */
+ol li {
+  list-style: upper-latin;
+  margin-left: 2.25rem;
+}
+
+/* line 2, ../sass/_form.scss */
+input, button {
+  height: 1.6875rem;
+  line-height: normal;
+  font: 1.125rem Helvetica, "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.125rem;
+}
+
+/* line 10, ../sass/_form.scss */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="search"] {
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  width: 100%;
+}
+
+/* line 25, ../sass/_form.scss */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* line 30, ../sass/_form.scss */
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
+
+/* line 34, ../sass/_form.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  height: 1.125rem;
+  box-sizing: border-box;
+}
+
+/* line 39, ../sass/_form.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 43, ../sass/_form.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 50, ../sass/_form.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 55, ../sass/_form.scss */
+textarea {
+  vertical-align: top;
+  border: 1px solid black;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  overflow: auto;
+  width: 100%;
+  line-height: 1.6875rem;
+  font: 1.125rem Helvetica, "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.125rem;
+}
+
+/* line 71, ../sass/_form.scss */
+select {
+  height: 1.6875rem;
+  font: 1.125rem Helvetica, "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.125rem;
+  border: 1px solid black;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 82, ../sass/_form.scss */
+button, html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  height: 1.6875rem;
+  border: 1px solid black;
+  -webkit-appearance: none;
+  -moz-appearance: button;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+/* line 93, ../sass/_form.scss */
+button {
+  overflow: visible;
+  text-transform: none;
+}
+
+/* line 97, ../sass/_form.scss */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/* line 98, ../sass/_form.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 2, ../sass/_grid.scss */
+.clear:before, .clear:after {
+  content: " ";
+  display: table;
+}
+
+/* line 2, ../sass/_grid.scss */
+.clear:after {
+  clear: both;
+}
+
+/* line 3, ../sass/_grid.scss */
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+
+/* line 3, ../sass/_grid.scss */
+.row:after {
+  clear: both;
+}
+
+/* line 5, ../sass/_grid.scss */
+.row {
+  position: relative;
+}
+
+/* line 11, ../sass/_grid.scss */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+}
+
+/* line 17, ../sass/_grid.scss */
+.container-full {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: blue;
+  overflow-x: hidden;
+}
+
+/* Smartphones 橫式 ----------- */
+@media only screen and (min-width: 321px) {
+  /* line 94, ../sass/_grid.scss */
+  .container, .container-full {
+    width: 100%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-1 {
+    position: relative;
+    float: left;
+    width: 8.33333%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-2 {
+    position: relative;
+    float: left;
+    width: 16.66667%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-3 {
+    position: relative;
+    float: left;
+    width: 25%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-4 {
+    position: relative;
+    float: left;
+    width: 33.33333%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-5 {
+    position: relative;
+    float: left;
+    width: 41.66667%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-6 {
+    position: relative;
+    float: left;
+    width: 50%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-7 {
+    position: relative;
+    float: left;
+    width: 58.33333%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-8 {
+    position: relative;
+    float: left;
+    width: 66.66667%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-9 {
+    position: relative;
+    float: left;
+    width: 75%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-10 {
+    position: relative;
+    float: left;
+    width: 83.33333%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-11 {
+    position: relative;
+    float: left;
+    width: 91.66667%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-12 {
+    position: relative;
+    float: left;
+    width: 100%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-1 {
+    left: 8.33333%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-2 {
+    left: 16.66667%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-3 {
+    left: 25%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-4 {
+    left: 33.33333%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-5 {
+    left: 41.66667%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-6 {
+    left: 50%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-7 {
+    left: 58.33333%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-8 {
+    left: 66.66667%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-9 {
+    left: 75%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-10 {
+    left: 83.33333%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-11 {
+    left: 91.66667%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-1 {
+    left: -8.33333%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-2 {
+    left: -16.66667%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-3 {
+    left: -25%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-4 {
+    left: -33.33333%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-5 {
+    left: -41.66667%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-6 {
+    left: -50%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-7 {
+    left: -58.33333%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-8 {
+    left: -66.66667%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-9 {
+    left: -75%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-10 {
+    left: -83.33333%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-11 {
+    left: -91.66667%;
+  }
+}
+/* Smartphones 直式 ----------- */
+@media only screen and (max-width: 320px) {
+  /* line 103, ../sass/_grid.scss */
+  .container, .container-full {
+    width: 100%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-1 {
+    position: relative;
+    float: left;
+    width: 8.33333%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-2 {
+    position: relative;
+    float: left;
+    width: 16.66667%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-3 {
+    position: relative;
+    float: left;
+    width: 25%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-4 {
+    position: relative;
+    float: left;
+    width: 33.33333%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-5 {
+    position: relative;
+    float: left;
+    width: 41.66667%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-6 {
+    position: relative;
+    float: left;
+    width: 50%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-7 {
+    position: relative;
+    float: left;
+    width: 58.33333%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-8 {
+    position: relative;
+    float: left;
+    width: 66.66667%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-9 {
+    position: relative;
+    float: left;
+    width: 75%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-10 {
+    position: relative;
+    float: left;
+    width: 83.33333%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-11 {
+    position: relative;
+    float: left;
+    width: 91.66667%;
+  }
+
+  /* line 30, ../sass/_grid.scss */
+  .c-12 {
+    position: relative;
+    float: left;
+    width: 100%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-1 {
+    left: 8.33333%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-2 {
+    left: 16.66667%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-3 {
+    left: 25%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-4 {
+    left: 33.33333%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-5 {
+    left: 41.66667%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-6 {
+    left: 50%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-7 {
+    left: 58.33333%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-8 {
+    left: 66.66667%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-9 {
+    left: 75%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-10 {
+    left: 83.33333%;
+  }
+
+  /* line 39, ../sass/_grid.scss */
+  .r-11 {
+    left: 91.66667%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-1 {
+    left: -8.33333%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-2 {
+    left: -16.66667%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-3 {
+    left: -25%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-4 {
+    left: -33.33333%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-5 {
+    left: -41.66667%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-6 {
+    left: -50%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-7 {
+    left: -58.33333%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-8 {
+    left: -66.66667%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-9 {
+    left: -75%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-10 {
+    left: -83.33333%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .l-11 {
+    left: -91.66667%;
+  }
+}
+/* iPads 768 x 1024 直式橫式 ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 111, ../sass/_grid.scss */
+  .container, .container-full {
+    width: 100%;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-1 {
+    position: relative;
+    float: left;
+    width: 60px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-2 {
+    position: relative;
+    float: left;
+    width: 120px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-3 {
+    position: relative;
+    float: left;
+    width: 180px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-4 {
+    position: relative;
+    float: left;
+    width: 240px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-5 {
+    position: relative;
+    float: left;
+    width: 300px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-6 {
+    position: relative;
+    float: left;
+    width: 360px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-7 {
+    position: relative;
+    float: left;
+    width: 420px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-8 {
+    position: relative;
+    float: left;
+    width: 480px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-9 {
+    position: relative;
+    float: left;
+    width: 540px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-10 {
+    position: relative;
+    float: left;
+    width: 600px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-11 {
+    position: relative;
+    float: left;
+    width: 660px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-12 {
+    position: relative;
+    float: left;
+    width: 720px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-13 {
+    position: relative;
+    float: left;
+    width: 780px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-14 {
+    position: relative;
+    float: left;
+    width: 840px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-15 {
+    position: relative;
+    float: left;
+    width: 900px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-16 {
+    position: relative;
+    float: left;
+    width: 960px;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-1h {
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 60px;
+    max-height: 60px;
+    min-height: 60px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-2h {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 120px;
+    max-height: 120px;
+    min-height: 120px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-3h {
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 180px;
+    max-height: 180px;
+    min-height: 180px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-4h {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 240px;
+    max-height: 240px;
+    min-height: 240px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-5h {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-6h {
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 360px;
+    max-height: 360px;
+    min-height: 360px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-7h {
+    position: relative;
+    float: left;
+    width: 420px;
+    height: 420px;
+    max-height: 420px;
+    min-height: 420px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-8h {
+    position: relative;
+    float: left;
+    width: 480px;
+    height: 480px;
+    max-height: 480px;
+    min-height: 480px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-9h {
+    position: relative;
+    float: left;
+    width: 540px;
+    height: 540px;
+    max-height: 540px;
+    min-height: 540px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-10h {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 600px;
+    max-height: 600px;
+    min-height: 600px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-11h {
+    position: relative;
+    float: left;
+    width: 660px;
+    height: 660px;
+    max-height: 660px;
+    min-height: 660px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-12h {
+    position: relative;
+    float: left;
+    width: 720px;
+    height: 720px;
+    max-height: 720px;
+    min-height: 720px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-13h {
+    position: relative;
+    float: left;
+    width: 780px;
+    height: 780px;
+    max-height: 780px;
+    min-height: 780px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-14h {
+    position: relative;
+    float: left;
+    width: 840px;
+    height: 840px;
+    max-height: 840px;
+    min-height: 840px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-15h {
+    position: relative;
+    float: left;
+    width: 900px;
+    height: 900px;
+    max-height: 900px;
+    min-height: 900px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-16h {
+    position: relative;
+    float: left;
+    width: 960px;
+    height: 960px;
+    max-height: 960px;
+    min-height: 960px;
+    overflow: hidden;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-1r {
+    left: 60px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-2r {
+    left: 120px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-3r {
+    left: 180px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-4r {
+    left: 240px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-5r {
+    left: 300px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-6r {
+    left: 360px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-7r {
+    left: 420px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-8r {
+    left: 480px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-9r {
+    left: 540px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-10r {
+    left: 600px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-11r {
+    left: 660px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-12r {
+    left: 720px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-13r {
+    left: 780px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-14r {
+    left: 840px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-15r {
+    left: 900px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-1l {
+    left: -60px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-2l {
+    left: -120px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-3l {
+    left: -180px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-4l {
+    left: -240px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-5l {
+    left: -300px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-6l {
+    left: -360px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-7l {
+    left: -420px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-8l {
+    left: -480px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-9l {
+    left: -540px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-10l {
+    left: -600px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-11l {
+    left: -660px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-12l {
+    left: -720px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-13l {
+    left: -780px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-14l {
+    left: -840px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-15l {
+    left: -900px;
+  }
+}
+/* iPads 1024 橫式 ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* line 119, ../sass/_grid.scss */
+  .container, .container-full {
+    width: 960px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-1 {
+    position: relative;
+    float: left;
+    width: 60px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-2 {
+    position: relative;
+    float: left;
+    width: 120px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-3 {
+    position: relative;
+    float: left;
+    width: 180px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-4 {
+    position: relative;
+    float: left;
+    width: 240px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-5 {
+    position: relative;
+    float: left;
+    width: 300px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-6 {
+    position: relative;
+    float: left;
+    width: 360px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-7 {
+    position: relative;
+    float: left;
+    width: 420px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-8 {
+    position: relative;
+    float: left;
+    width: 480px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-9 {
+    position: relative;
+    float: left;
+    width: 540px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-10 {
+    position: relative;
+    float: left;
+    width: 600px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-11 {
+    position: relative;
+    float: left;
+    width: 660px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-12 {
+    position: relative;
+    float: left;
+    width: 720px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-13 {
+    position: relative;
+    float: left;
+    width: 780px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-14 {
+    position: relative;
+    float: left;
+    width: 840px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-15 {
+    position: relative;
+    float: left;
+    width: 900px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-16 {
+    position: relative;
+    float: left;
+    width: 960px;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-1h {
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 60px;
+    max-height: 60px;
+    min-height: 60px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-2h {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 120px;
+    max-height: 120px;
+    min-height: 120px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-3h {
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 180px;
+    max-height: 180px;
+    min-height: 180px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-4h {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 240px;
+    max-height: 240px;
+    min-height: 240px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-5h {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-6h {
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 360px;
+    max-height: 360px;
+    min-height: 360px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-7h {
+    position: relative;
+    float: left;
+    width: 420px;
+    height: 420px;
+    max-height: 420px;
+    min-height: 420px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-8h {
+    position: relative;
+    float: left;
+    width: 480px;
+    height: 480px;
+    max-height: 480px;
+    min-height: 480px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-9h {
+    position: relative;
+    float: left;
+    width: 540px;
+    height: 540px;
+    max-height: 540px;
+    min-height: 540px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-10h {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 600px;
+    max-height: 600px;
+    min-height: 600px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-11h {
+    position: relative;
+    float: left;
+    width: 660px;
+    height: 660px;
+    max-height: 660px;
+    min-height: 660px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-12h {
+    position: relative;
+    float: left;
+    width: 720px;
+    height: 720px;
+    max-height: 720px;
+    min-height: 720px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-13h {
+    position: relative;
+    float: left;
+    width: 780px;
+    height: 780px;
+    max-height: 780px;
+    min-height: 780px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-14h {
+    position: relative;
+    float: left;
+    width: 840px;
+    height: 840px;
+    max-height: 840px;
+    min-height: 840px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-15h {
+    position: relative;
+    float: left;
+    width: 900px;
+    height: 900px;
+    max-height: 900px;
+    min-height: 900px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-16h {
+    position: relative;
+    float: left;
+    width: 960px;
+    height: 960px;
+    max-height: 960px;
+    min-height: 960px;
+    overflow: hidden;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-1r {
+    left: 60px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-2r {
+    left: 120px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-3r {
+    left: 180px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-4r {
+    left: 240px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-5r {
+    left: 300px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-6r {
+    left: 360px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-7r {
+    left: 420px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-8r {
+    left: 480px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-9r {
+    left: 540px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-10r {
+    left: 600px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-11r {
+    left: 660px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-12r {
+    left: 720px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-13r {
+    left: 780px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-14r {
+    left: 840px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-15r {
+    left: 900px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-1l {
+    left: -60px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-2l {
+    left: -120px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-3l {
+    left: -180px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-4l {
+    left: -240px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-5l {
+    left: -300px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-6l {
+    left: -360px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-7l {
+    left: -420px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-8l {
+    left: -480px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-9l {
+    left: -540px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-10l {
+    left: -600px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-11l {
+    left: -660px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-12l {
+    left: -720px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-13l {
+    left: -780px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-14l {
+    left: -840px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-15l {
+    left: -900px;
+  }
+}
+/* iPads 768 直式 ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* line 127, ../sass/_grid.scss */
+  .container, .container-full {
+    width: 720px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-1 {
+    position: relative;
+    float: left;
+    width: 60px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-2 {
+    position: relative;
+    float: left;
+    width: 120px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-3 {
+    position: relative;
+    float: left;
+    width: 180px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-4 {
+    position: relative;
+    float: left;
+    width: 240px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-5 {
+    position: relative;
+    float: left;
+    width: 300px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-6 {
+    position: relative;
+    float: left;
+    width: 360px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-7 {
+    position: relative;
+    float: left;
+    width: 420px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-8 {
+    position: relative;
+    float: left;
+    width: 480px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-9 {
+    position: relative;
+    float: left;
+    width: 540px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-10 {
+    position: relative;
+    float: left;
+    width: 600px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-11 {
+    position: relative;
+    float: left;
+    width: 660px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-12 {
+    position: relative;
+    float: left;
+    width: 720px;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-1h {
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 60px;
+    max-height: 60px;
+    min-height: 60px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-2h {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 120px;
+    max-height: 120px;
+    min-height: 120px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-3h {
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 180px;
+    max-height: 180px;
+    min-height: 180px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-4h {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 240px;
+    max-height: 240px;
+    min-height: 240px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-5h {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-6h {
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 360px;
+    max-height: 360px;
+    min-height: 360px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-7h {
+    position: relative;
+    float: left;
+    width: 420px;
+    height: 420px;
+    max-height: 420px;
+    min-height: 420px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-8h {
+    position: relative;
+    float: left;
+    width: 480px;
+    height: 480px;
+    max-height: 480px;
+    min-height: 480px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-9h {
+    position: relative;
+    float: left;
+    width: 540px;
+    height: 540px;
+    max-height: 540px;
+    min-height: 540px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-10h {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 600px;
+    max-height: 600px;
+    min-height: 600px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-11h {
+    position: relative;
+    float: left;
+    width: 660px;
+    height: 660px;
+    max-height: 660px;
+    min-height: 660px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-12h {
+    position: relative;
+    float: left;
+    width: 720px;
+    height: 720px;
+    max-height: 720px;
+    min-height: 720px;
+    overflow: hidden;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-1r {
+    left: 60px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-2r {
+    left: 120px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-3r {
+    left: 180px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-4r {
+    left: 240px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-5r {
+    left: 300px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-6r {
+    left: 360px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-7r {
+    left: 420px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-8r {
+    left: 480px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-9r {
+    left: 540px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-10r {
+    left: 600px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-11r {
+    left: 660px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-1l {
+    left: -60px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-2l {
+    left: -120px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-3l {
+    left: -180px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-4l {
+    left: -240px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-5l {
+    left: -300px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-6l {
+    left: -360px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-7l {
+    left: -420px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-8l {
+    left: -480px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-9l {
+    left: -540px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-10l {
+    left: -600px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-11l {
+    left: -660px;
+  }
+}
+/* iPad3 1024 橫式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 135, ../sass/_grid.scss */
+  .container, .container-full {
+    width: 960px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-1 {
+    position: relative;
+    float: left;
+    width: 60px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-2 {
+    position: relative;
+    float: left;
+    width: 120px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-3 {
+    position: relative;
+    float: left;
+    width: 180px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-4 {
+    position: relative;
+    float: left;
+    width: 240px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-5 {
+    position: relative;
+    float: left;
+    width: 300px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-6 {
+    position: relative;
+    float: left;
+    width: 360px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-7 {
+    position: relative;
+    float: left;
+    width: 420px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-8 {
+    position: relative;
+    float: left;
+    width: 480px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-9 {
+    position: relative;
+    float: left;
+    width: 540px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-10 {
+    position: relative;
+    float: left;
+    width: 600px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-11 {
+    position: relative;
+    float: left;
+    width: 660px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-12 {
+    position: relative;
+    float: left;
+    width: 720px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-13 {
+    position: relative;
+    float: left;
+    width: 780px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-14 {
+    position: relative;
+    float: left;
+    width: 840px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-15 {
+    position: relative;
+    float: left;
+    width: 900px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-16 {
+    position: relative;
+    float: left;
+    width: 960px;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-1h {
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 60px;
+    max-height: 60px;
+    min-height: 60px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-2h {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 120px;
+    max-height: 120px;
+    min-height: 120px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-3h {
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 180px;
+    max-height: 180px;
+    min-height: 180px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-4h {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 240px;
+    max-height: 240px;
+    min-height: 240px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-5h {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-6h {
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 360px;
+    max-height: 360px;
+    min-height: 360px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-7h {
+    position: relative;
+    float: left;
+    width: 420px;
+    height: 420px;
+    max-height: 420px;
+    min-height: 420px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-8h {
+    position: relative;
+    float: left;
+    width: 480px;
+    height: 480px;
+    max-height: 480px;
+    min-height: 480px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-9h {
+    position: relative;
+    float: left;
+    width: 540px;
+    height: 540px;
+    max-height: 540px;
+    min-height: 540px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-10h {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 600px;
+    max-height: 600px;
+    min-height: 600px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-11h {
+    position: relative;
+    float: left;
+    width: 660px;
+    height: 660px;
+    max-height: 660px;
+    min-height: 660px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-12h {
+    position: relative;
+    float: left;
+    width: 720px;
+    height: 720px;
+    max-height: 720px;
+    min-height: 720px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-13h {
+    position: relative;
+    float: left;
+    width: 780px;
+    height: 780px;
+    max-height: 780px;
+    min-height: 780px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-14h {
+    position: relative;
+    float: left;
+    width: 840px;
+    height: 840px;
+    max-height: 840px;
+    min-height: 840px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-15h {
+    position: relative;
+    float: left;
+    width: 900px;
+    height: 900px;
+    max-height: 900px;
+    min-height: 900px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-16h {
+    position: relative;
+    float: left;
+    width: 960px;
+    height: 960px;
+    max-height: 960px;
+    min-height: 960px;
+    overflow: hidden;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-1r {
+    left: 60px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-2r {
+    left: 120px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-3r {
+    left: 180px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-4r {
+    left: 240px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-5r {
+    left: 300px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-6r {
+    left: 360px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-7r {
+    left: 420px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-8r {
+    left: 480px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-9r {
+    left: 540px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-10r {
+    left: 600px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-11r {
+    left: 660px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-12r {
+    left: 720px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-13r {
+    left: 780px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-14r {
+    left: 840px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-15r {
+    left: 900px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-1l {
+    left: -60px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-2l {
+    left: -120px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-3l {
+    left: -180px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-4l {
+    left: -240px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-5l {
+    left: -300px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-6l {
+    left: -360px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-7l {
+    left: -420px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-8l {
+    left: -480px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-9l {
+    left: -540px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-10l {
+    left: -600px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-11l {
+    left: -660px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-12l {
+    left: -720px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-13l {
+    left: -780px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-14l {
+    left: -840px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-15l {
+    left: -900px;
+  }
+}
+/* iPad3 768 直式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 143, ../sass/_grid.scss */
+  .container, .container-full {
+    width: 720px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-1 {
+    position: relative;
+    float: left;
+    width: 60px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-2 {
+    position: relative;
+    float: left;
+    width: 120px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-3 {
+    position: relative;
+    float: left;
+    width: 180px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-4 {
+    position: relative;
+    float: left;
+    width: 240px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-5 {
+    position: relative;
+    float: left;
+    width: 300px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-6 {
+    position: relative;
+    float: left;
+    width: 360px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-7 {
+    position: relative;
+    float: left;
+    width: 420px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-8 {
+    position: relative;
+    float: left;
+    width: 480px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-9 {
+    position: relative;
+    float: left;
+    width: 540px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-10 {
+    position: relative;
+    float: left;
+    width: 600px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-11 {
+    position: relative;
+    float: left;
+    width: 660px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-12 {
+    position: relative;
+    float: left;
+    width: 720px;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-1h {
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 60px;
+    max-height: 60px;
+    min-height: 60px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-2h {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 120px;
+    max-height: 120px;
+    min-height: 120px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-3h {
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 180px;
+    max-height: 180px;
+    min-height: 180px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-4h {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 240px;
+    max-height: 240px;
+    min-height: 240px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-5h {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-6h {
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 360px;
+    max-height: 360px;
+    min-height: 360px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-7h {
+    position: relative;
+    float: left;
+    width: 420px;
+    height: 420px;
+    max-height: 420px;
+    min-height: 420px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-8h {
+    position: relative;
+    float: left;
+    width: 480px;
+    height: 480px;
+    max-height: 480px;
+    min-height: 480px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-9h {
+    position: relative;
+    float: left;
+    width: 540px;
+    height: 540px;
+    max-height: 540px;
+    min-height: 540px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-10h {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 600px;
+    max-height: 600px;
+    min-height: 600px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-11h {
+    position: relative;
+    float: left;
+    width: 660px;
+    height: 660px;
+    max-height: 660px;
+    min-height: 660px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-12h {
+    position: relative;
+    float: left;
+    width: 720px;
+    height: 720px;
+    max-height: 720px;
+    min-height: 720px;
+    overflow: hidden;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-1r {
+    left: 60px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-2r {
+    left: 120px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-3r {
+    left: 180px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-4r {
+    left: 240px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-5r {
+    left: 300px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-6r {
+    left: 360px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-7r {
+    left: 420px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-8r {
+    left: 480px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-9r {
+    left: 540px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-10r {
+    left: 600px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-11r {
+    left: 660px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-1l {
+    left: -60px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-2l {
+    left: -120px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-3l {
+    left: -180px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-4l {
+    left: -240px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-5l {
+    left: -300px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-6l {
+    left: -360px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-7l {
+    left: -420px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-8l {
+    left: -480px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-9l {
+    left: -540px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-10l {
+    left: -600px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-11l {
+    left: -660px;
+  }
+}
+/* 一般桌面解析 1024px ----------- */
+@media only screen and (min-width: 760px) {
+  /* line 151, ../sass/_grid.scss */
+  .container, .container-full {
+    width: 720px;
+    background-color: green;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-1 {
+    position: relative;
+    float: left;
+    width: 60px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-2 {
+    position: relative;
+    float: left;
+    width: 120px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-3 {
+    position: relative;
+    float: left;
+    width: 180px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-4 {
+    position: relative;
+    float: left;
+    width: 240px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-5 {
+    position: relative;
+    float: left;
+    width: 300px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-6 {
+    position: relative;
+    float: left;
+    width: 360px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-7 {
+    position: relative;
+    float: left;
+    width: 420px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-8 {
+    position: relative;
+    float: left;
+    width: 480px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-9 {
+    position: relative;
+    float: left;
+    width: 540px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-10 {
+    position: relative;
+    float: left;
+    width: 600px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-11 {
+    position: relative;
+    float: left;
+    width: 660px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c12-12 {
+    position: relative;
+    float: left;
+    width: 720px;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-1h {
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 60px;
+    max-height: 60px;
+    min-height: 60px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-2h {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 120px;
+    max-height: 120px;
+    min-height: 120px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-3h {
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 180px;
+    max-height: 180px;
+    min-height: 180px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-4h {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 240px;
+    max-height: 240px;
+    min-height: 240px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-5h {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-6h {
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 360px;
+    max-height: 360px;
+    min-height: 360px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-7h {
+    position: relative;
+    float: left;
+    width: 420px;
+    height: 420px;
+    max-height: 420px;
+    min-height: 420px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-8h {
+    position: relative;
+    float: left;
+    width: 480px;
+    height: 480px;
+    max-height: 480px;
+    min-height: 480px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-9h {
+    position: relative;
+    float: left;
+    width: 540px;
+    height: 540px;
+    max-height: 540px;
+    min-height: 540px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-10h {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 600px;
+    max-height: 600px;
+    min-height: 600px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-11h {
+    position: relative;
+    float: left;
+    width: 660px;
+    height: 660px;
+    max-height: 660px;
+    min-height: 660px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c12-12h {
+    position: relative;
+    float: left;
+    width: 720px;
+    height: 720px;
+    max-height: 720px;
+    min-height: 720px;
+    overflow: hidden;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-1r {
+    left: 60px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-2r {
+    left: 120px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-3r {
+    left: 180px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-4r {
+    left: 240px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-5r {
+    left: 300px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-6r {
+    left: 360px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-7r {
+    left: 420px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-8r {
+    left: 480px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-9r {
+    left: 540px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-10r {
+    left: 600px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c12-11r {
+    left: 660px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-1l {
+    left: -60px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-2l {
+    left: -120px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-3l {
+    left: -180px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-4l {
+    left: -240px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-5l {
+    left: -300px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-6l {
+    left: -360px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-7l {
+    left: -420px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-8l {
+    left: -480px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-9l {
+    left: -540px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-10l {
+    left: -600px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c12-11l {
+    left: -660px;
+  }
+}
+/* 一般桌面解析 1024px ----------- */
+@media only screen and (min-width: 1020px) {
+  /* line 160, ../sass/_grid.scss */
+  .container, .container-full {
+    width: 960px;
+    background-color: red;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-1 {
+    position: relative;
+    float: left;
+    width: 60px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-2 {
+    position: relative;
+    float: left;
+    width: 120px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-3 {
+    position: relative;
+    float: left;
+    width: 180px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-4 {
+    position: relative;
+    float: left;
+    width: 240px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-5 {
+    position: relative;
+    float: left;
+    width: 300px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-6 {
+    position: relative;
+    float: left;
+    width: 360px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-7 {
+    position: relative;
+    float: left;
+    width: 420px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-8 {
+    position: relative;
+    float: left;
+    width: 480px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-9 {
+    position: relative;
+    float: left;
+    width: 540px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-10 {
+    position: relative;
+    float: left;
+    width: 600px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-11 {
+    position: relative;
+    float: left;
+    width: 660px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-12 {
+    position: relative;
+    float: left;
+    width: 720px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-13 {
+    position: relative;
+    float: left;
+    width: 780px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-14 {
+    position: relative;
+    float: left;
+    width: 840px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-15 {
+    position: relative;
+    float: left;
+    width: 900px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c16-16 {
+    position: relative;
+    float: left;
+    width: 960px;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-1h {
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 60px;
+    max-height: 60px;
+    min-height: 60px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-2h {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 120px;
+    max-height: 120px;
+    min-height: 120px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-3h {
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 180px;
+    max-height: 180px;
+    min-height: 180px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-4h {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 240px;
+    max-height: 240px;
+    min-height: 240px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-5h {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-6h {
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 360px;
+    max-height: 360px;
+    min-height: 360px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-7h {
+    position: relative;
+    float: left;
+    width: 420px;
+    height: 420px;
+    max-height: 420px;
+    min-height: 420px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-8h {
+    position: relative;
+    float: left;
+    width: 480px;
+    height: 480px;
+    max-height: 480px;
+    min-height: 480px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-9h {
+    position: relative;
+    float: left;
+    width: 540px;
+    height: 540px;
+    max-height: 540px;
+    min-height: 540px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-10h {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 600px;
+    max-height: 600px;
+    min-height: 600px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-11h {
+    position: relative;
+    float: left;
+    width: 660px;
+    height: 660px;
+    max-height: 660px;
+    min-height: 660px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-12h {
+    position: relative;
+    float: left;
+    width: 720px;
+    height: 720px;
+    max-height: 720px;
+    min-height: 720px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-13h {
+    position: relative;
+    float: left;
+    width: 780px;
+    height: 780px;
+    max-height: 780px;
+    min-height: 780px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-14h {
+    position: relative;
+    float: left;
+    width: 840px;
+    height: 840px;
+    max-height: 840px;
+    min-height: 840px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-15h {
+    position: relative;
+    float: left;
+    width: 900px;
+    height: 900px;
+    max-height: 900px;
+    min-height: 900px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c16-16h {
+    position: relative;
+    float: left;
+    width: 960px;
+    height: 960px;
+    max-height: 960px;
+    min-height: 960px;
+    overflow: hidden;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-1r {
+    left: 60px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-2r {
+    left: 120px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-3r {
+    left: 180px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-4r {
+    left: 240px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-5r {
+    left: 300px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-6r {
+    left: 360px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-7r {
+    left: 420px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-8r {
+    left: 480px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-9r {
+    left: 540px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-10r {
+    left: 600px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-11r {
+    left: 660px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-12r {
+    left: 720px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-13r {
+    left: 780px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-14r {
+    left: 840px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c16-15r {
+    left: 900px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-1l {
+    left: -60px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-2l {
+    left: -120px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-3l {
+    left: -180px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-4l {
+    left: -240px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-5l {
+    left: -300px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-6l {
+    left: -360px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-7l {
+    left: -420px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-8l {
+    left: -480px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-9l {
+    left: -540px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-10l {
+    left: -600px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-11l {
+    left: -660px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-12l {
+    left: -720px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-13l {
+    left: -780px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-14l {
+    left: -840px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c16-15l {
+    left: -900px;
+  }
+}
+/* 一般桌面解析 1280px ----------- */
+@media only screen and (min-width: 1224px) {
+  /* line 169, ../sass/_grid.scss */
+  .container, .container-full {
+    width: 1200px;
+    background-color: blue;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-1 {
+    position: relative;
+    float: left;
+    width: 60px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-2 {
+    position: relative;
+    float: left;
+    width: 120px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-3 {
+    position: relative;
+    float: left;
+    width: 180px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-4 {
+    position: relative;
+    float: left;
+    width: 240px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-5 {
+    position: relative;
+    float: left;
+    width: 300px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-6 {
+    position: relative;
+    float: left;
+    width: 360px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-7 {
+    position: relative;
+    float: left;
+    width: 420px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-8 {
+    position: relative;
+    float: left;
+    width: 480px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-9 {
+    position: relative;
+    float: left;
+    width: 540px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-10 {
+    position: relative;
+    float: left;
+    width: 600px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-11 {
+    position: relative;
+    float: left;
+    width: 660px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-12 {
+    position: relative;
+    float: left;
+    width: 720px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-13 {
+    position: relative;
+    float: left;
+    width: 780px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-14 {
+    position: relative;
+    float: left;
+    width: 840px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-15 {
+    position: relative;
+    float: left;
+    width: 900px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-16 {
+    position: relative;
+    float: left;
+    width: 960px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-17 {
+    position: relative;
+    float: left;
+    width: 1020px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-18 {
+    position: relative;
+    float: left;
+    width: 1080px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-19 {
+    position: relative;
+    float: left;
+    width: 1140px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c20-20 {
+    position: relative;
+    float: left;
+    width: 1200px;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-1h {
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 60px;
+    max-height: 60px;
+    min-height: 60px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-2h {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 120px;
+    max-height: 120px;
+    min-height: 120px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-3h {
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 180px;
+    max-height: 180px;
+    min-height: 180px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-4h {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 240px;
+    max-height: 240px;
+    min-height: 240px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-5h {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-6h {
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 360px;
+    max-height: 360px;
+    min-height: 360px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-7h {
+    position: relative;
+    float: left;
+    width: 420px;
+    height: 420px;
+    max-height: 420px;
+    min-height: 420px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-8h {
+    position: relative;
+    float: left;
+    width: 480px;
+    height: 480px;
+    max-height: 480px;
+    min-height: 480px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-9h {
+    position: relative;
+    float: left;
+    width: 540px;
+    height: 540px;
+    max-height: 540px;
+    min-height: 540px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-10h {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 600px;
+    max-height: 600px;
+    min-height: 600px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-11h {
+    position: relative;
+    float: left;
+    width: 660px;
+    height: 660px;
+    max-height: 660px;
+    min-height: 660px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-12h {
+    position: relative;
+    float: left;
+    width: 720px;
+    height: 720px;
+    max-height: 720px;
+    min-height: 720px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-13h {
+    position: relative;
+    float: left;
+    width: 780px;
+    height: 780px;
+    max-height: 780px;
+    min-height: 780px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-14h {
+    position: relative;
+    float: left;
+    width: 840px;
+    height: 840px;
+    max-height: 840px;
+    min-height: 840px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-15h {
+    position: relative;
+    float: left;
+    width: 900px;
+    height: 900px;
+    max-height: 900px;
+    min-height: 900px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-16h {
+    position: relative;
+    float: left;
+    width: 960px;
+    height: 960px;
+    max-height: 960px;
+    min-height: 960px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-17h {
+    position: relative;
+    float: left;
+    width: 1020px;
+    height: 1020px;
+    max-height: 1020px;
+    min-height: 1020px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-18h {
+    position: relative;
+    float: left;
+    width: 1080px;
+    height: 1080px;
+    max-height: 1080px;
+    min-height: 1080px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-19h {
+    position: relative;
+    float: left;
+    width: 1140px;
+    height: 1140px;
+    max-height: 1140px;
+    min-height: 1140px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c20-20h {
+    position: relative;
+    float: left;
+    width: 1200px;
+    height: 1200px;
+    max-height: 1200px;
+    min-height: 1200px;
+    overflow: hidden;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-1r {
+    left: 60px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-2r {
+    left: 120px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-3r {
+    left: 180px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-4r {
+    left: 240px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-5r {
+    left: 300px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-6r {
+    left: 360px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-7r {
+    left: 420px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-8r {
+    left: 480px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-9r {
+    left: 540px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-10r {
+    left: 600px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-11r {
+    left: 660px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-12r {
+    left: 720px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-13r {
+    left: 780px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-14r {
+    left: 840px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-15r {
+    left: 900px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-16r {
+    left: 960px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-17r {
+    left: 1020px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-18r {
+    left: 1080px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c20-19r {
+    left: 1140px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-1l {
+    left: -60px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-2l {
+    left: -120px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-3l {
+    left: -180px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-4l {
+    left: -240px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-5l {
+    left: -300px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-6l {
+    left: -360px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-7l {
+    left: -420px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-8l {
+    left: -480px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-9l {
+    left: -540px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-10l {
+    left: -600px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-11l {
+    left: -660px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-12l {
+    left: -720px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-13l {
+    left: -780px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-14l {
+    left: -840px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-15l {
+    left: -900px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-16l {
+    left: -960px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-17l {
+    left: -1020px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-18l {
+    left: -1080px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c20-19l {
+    left: -1140px;
+  }
+}
+/* 一般桌面解析 1680px ----------- */
+@media only screen and (min-width: 1600px) {
+  /* line 178, ../sass/_grid.scss */
+  .container, .container-full {
+    width: 1560px;
+    background-color: blue;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-1 {
+    position: relative;
+    float: left;
+    width: 60px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-2 {
+    position: relative;
+    float: left;
+    width: 120px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-3 {
+    position: relative;
+    float: left;
+    width: 180px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-4 {
+    position: relative;
+    float: left;
+    width: 240px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-5 {
+    position: relative;
+    float: left;
+    width: 300px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-6 {
+    position: relative;
+    float: left;
+    width: 360px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-7 {
+    position: relative;
+    float: left;
+    width: 420px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-8 {
+    position: relative;
+    float: left;
+    width: 480px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-9 {
+    position: relative;
+    float: left;
+    width: 540px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-10 {
+    position: relative;
+    float: left;
+    width: 600px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-11 {
+    position: relative;
+    float: left;
+    width: 660px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-12 {
+    position: relative;
+    float: left;
+    width: 720px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-13 {
+    position: relative;
+    float: left;
+    width: 780px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-14 {
+    position: relative;
+    float: left;
+    width: 840px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-15 {
+    position: relative;
+    float: left;
+    width: 900px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-16 {
+    position: relative;
+    float: left;
+    width: 960px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-17 {
+    position: relative;
+    float: left;
+    width: 1020px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-18 {
+    position: relative;
+    float: left;
+    width: 1080px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-19 {
+    position: relative;
+    float: left;
+    width: 1140px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-20 {
+    position: relative;
+    float: left;
+    width: 1200px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-21 {
+    position: relative;
+    float: left;
+    width: 1260px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-22 {
+    position: relative;
+    float: left;
+    width: 1320px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-23 {
+    position: relative;
+    float: left;
+    width: 1380px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-24 {
+    position: relative;
+    float: left;
+    width: 1440px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-25 {
+    position: relative;
+    float: left;
+    width: 1500px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c26-26 {
+    position: relative;
+    float: left;
+    width: 1560px;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-1h {
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 60px;
+    max-height: 60px;
+    min-height: 60px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-2h {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 120px;
+    max-height: 120px;
+    min-height: 120px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-3h {
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 180px;
+    max-height: 180px;
+    min-height: 180px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-4h {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 240px;
+    max-height: 240px;
+    min-height: 240px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-5h {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-6h {
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 360px;
+    max-height: 360px;
+    min-height: 360px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-7h {
+    position: relative;
+    float: left;
+    width: 420px;
+    height: 420px;
+    max-height: 420px;
+    min-height: 420px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-8h {
+    position: relative;
+    float: left;
+    width: 480px;
+    height: 480px;
+    max-height: 480px;
+    min-height: 480px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-9h {
+    position: relative;
+    float: left;
+    width: 540px;
+    height: 540px;
+    max-height: 540px;
+    min-height: 540px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-10h {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 600px;
+    max-height: 600px;
+    min-height: 600px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-11h {
+    position: relative;
+    float: left;
+    width: 660px;
+    height: 660px;
+    max-height: 660px;
+    min-height: 660px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-12h {
+    position: relative;
+    float: left;
+    width: 720px;
+    height: 720px;
+    max-height: 720px;
+    min-height: 720px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-13h {
+    position: relative;
+    float: left;
+    width: 780px;
+    height: 780px;
+    max-height: 780px;
+    min-height: 780px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-14h {
+    position: relative;
+    float: left;
+    width: 840px;
+    height: 840px;
+    max-height: 840px;
+    min-height: 840px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-15h {
+    position: relative;
+    float: left;
+    width: 900px;
+    height: 900px;
+    max-height: 900px;
+    min-height: 900px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-16h {
+    position: relative;
+    float: left;
+    width: 960px;
+    height: 960px;
+    max-height: 960px;
+    min-height: 960px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-17h {
+    position: relative;
+    float: left;
+    width: 1020px;
+    height: 1020px;
+    max-height: 1020px;
+    min-height: 1020px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-18h {
+    position: relative;
+    float: left;
+    width: 1080px;
+    height: 1080px;
+    max-height: 1080px;
+    min-height: 1080px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-19h {
+    position: relative;
+    float: left;
+    width: 1140px;
+    height: 1140px;
+    max-height: 1140px;
+    min-height: 1140px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-20h {
+    position: relative;
+    float: left;
+    width: 1200px;
+    height: 1200px;
+    max-height: 1200px;
+    min-height: 1200px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-21h {
+    position: relative;
+    float: left;
+    width: 1260px;
+    height: 1260px;
+    max-height: 1260px;
+    min-height: 1260px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-22h {
+    position: relative;
+    float: left;
+    width: 1320px;
+    height: 1320px;
+    max-height: 1320px;
+    min-height: 1320px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-23h {
+    position: relative;
+    float: left;
+    width: 1380px;
+    height: 1380px;
+    max-height: 1380px;
+    min-height: 1380px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-24h {
+    position: relative;
+    float: left;
+    width: 1440px;
+    height: 1440px;
+    max-height: 1440px;
+    min-height: 1440px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-25h {
+    position: relative;
+    float: left;
+    width: 1500px;
+    height: 1500px;
+    max-height: 1500px;
+    min-height: 1500px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c26-26h {
+    position: relative;
+    float: left;
+    width: 1560px;
+    height: 1560px;
+    max-height: 1560px;
+    min-height: 1560px;
+    overflow: hidden;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-1r {
+    left: 60px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-2r {
+    left: 120px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-3r {
+    left: 180px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-4r {
+    left: 240px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-5r {
+    left: 300px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-6r {
+    left: 360px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-7r {
+    left: 420px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-8r {
+    left: 480px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-9r {
+    left: 540px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-10r {
+    left: 600px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-11r {
+    left: 660px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-12r {
+    left: 720px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-13r {
+    left: 780px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-14r {
+    left: 840px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-15r {
+    left: 900px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-16r {
+    left: 960px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-17r {
+    left: 1020px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-18r {
+    left: 1080px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-19r {
+    left: 1140px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-20r {
+    left: 1200px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-21r {
+    left: 1260px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-22r {
+    left: 1320px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-23r {
+    left: 1380px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-24r {
+    left: 1440px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c26-25r {
+    left: 1500px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-1l {
+    left: -60px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-2l {
+    left: -120px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-3l {
+    left: -180px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-4l {
+    left: -240px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-5l {
+    left: -300px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-6l {
+    left: -360px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-7l {
+    left: -420px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-8l {
+    left: -480px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-9l {
+    left: -540px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-10l {
+    left: -600px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-11l {
+    left: -660px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-12l {
+    left: -720px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-13l {
+    left: -780px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-14l {
+    left: -840px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-15l {
+    left: -900px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-16l {
+    left: -960px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-17l {
+    left: -1020px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-18l {
+    left: -1080px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-19l {
+    left: -1140px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-20l {
+    left: -1200px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-21l {
+    left: -1260px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-22l {
+    left: -1320px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-23l {
+    left: -1380px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-24l {
+    left: -1440px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c26-25l {
+    left: -1500px;
+  }
+}
+/* 大螢幕解析 1920px ----------- */
+@media only screen and (min-width: 1880px) {
+  /* line 187, ../sass/_grid.scss */
+  .container, .container-full {
+    width: 1800px;
+    background-color: yellow;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-1 {
+    position: relative;
+    float: left;
+    width: 60px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-2 {
+    position: relative;
+    float: left;
+    width: 120px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-3 {
+    position: relative;
+    float: left;
+    width: 180px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-4 {
+    position: relative;
+    float: left;
+    width: 240px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-5 {
+    position: relative;
+    float: left;
+    width: 300px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-6 {
+    position: relative;
+    float: left;
+    width: 360px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-7 {
+    position: relative;
+    float: left;
+    width: 420px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-8 {
+    position: relative;
+    float: left;
+    width: 480px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-9 {
+    position: relative;
+    float: left;
+    width: 540px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-10 {
+    position: relative;
+    float: left;
+    width: 600px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-11 {
+    position: relative;
+    float: left;
+    width: 660px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-12 {
+    position: relative;
+    float: left;
+    width: 720px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-13 {
+    position: relative;
+    float: left;
+    width: 780px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-14 {
+    position: relative;
+    float: left;
+    width: 840px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-15 {
+    position: relative;
+    float: left;
+    width: 900px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-16 {
+    position: relative;
+    float: left;
+    width: 960px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-17 {
+    position: relative;
+    float: left;
+    width: 1020px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-18 {
+    position: relative;
+    float: left;
+    width: 1080px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-19 {
+    position: relative;
+    float: left;
+    width: 1140px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-20 {
+    position: relative;
+    float: left;
+    width: 1200px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-21 {
+    position: relative;
+    float: left;
+    width: 1260px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-22 {
+    position: relative;
+    float: left;
+    width: 1320px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-23 {
+    position: relative;
+    float: left;
+    width: 1380px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-24 {
+    position: relative;
+    float: left;
+    width: 1440px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-25 {
+    position: relative;
+    float: left;
+    width: 1500px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-26 {
+    position: relative;
+    float: left;
+    width: 1560px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-27 {
+    position: relative;
+    float: left;
+    width: 1620px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-28 {
+    position: relative;
+    float: left;
+    width: 1680px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-29 {
+    position: relative;
+    float: left;
+    width: 1740px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c30-30 {
+    position: relative;
+    float: left;
+    width: 1800px;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-1h {
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 60px;
+    max-height: 60px;
+    min-height: 60px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-2h {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 120px;
+    max-height: 120px;
+    min-height: 120px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-3h {
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 180px;
+    max-height: 180px;
+    min-height: 180px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-4h {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 240px;
+    max-height: 240px;
+    min-height: 240px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-5h {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-6h {
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 360px;
+    max-height: 360px;
+    min-height: 360px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-7h {
+    position: relative;
+    float: left;
+    width: 420px;
+    height: 420px;
+    max-height: 420px;
+    min-height: 420px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-8h {
+    position: relative;
+    float: left;
+    width: 480px;
+    height: 480px;
+    max-height: 480px;
+    min-height: 480px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-9h {
+    position: relative;
+    float: left;
+    width: 540px;
+    height: 540px;
+    max-height: 540px;
+    min-height: 540px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-10h {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 600px;
+    max-height: 600px;
+    min-height: 600px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-11h {
+    position: relative;
+    float: left;
+    width: 660px;
+    height: 660px;
+    max-height: 660px;
+    min-height: 660px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-12h {
+    position: relative;
+    float: left;
+    width: 720px;
+    height: 720px;
+    max-height: 720px;
+    min-height: 720px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-13h {
+    position: relative;
+    float: left;
+    width: 780px;
+    height: 780px;
+    max-height: 780px;
+    min-height: 780px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-14h {
+    position: relative;
+    float: left;
+    width: 840px;
+    height: 840px;
+    max-height: 840px;
+    min-height: 840px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-15h {
+    position: relative;
+    float: left;
+    width: 900px;
+    height: 900px;
+    max-height: 900px;
+    min-height: 900px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-16h {
+    position: relative;
+    float: left;
+    width: 960px;
+    height: 960px;
+    max-height: 960px;
+    min-height: 960px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-17h {
+    position: relative;
+    float: left;
+    width: 1020px;
+    height: 1020px;
+    max-height: 1020px;
+    min-height: 1020px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-18h {
+    position: relative;
+    float: left;
+    width: 1080px;
+    height: 1080px;
+    max-height: 1080px;
+    min-height: 1080px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-19h {
+    position: relative;
+    float: left;
+    width: 1140px;
+    height: 1140px;
+    max-height: 1140px;
+    min-height: 1140px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-20h {
+    position: relative;
+    float: left;
+    width: 1200px;
+    height: 1200px;
+    max-height: 1200px;
+    min-height: 1200px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-21h {
+    position: relative;
+    float: left;
+    width: 1260px;
+    height: 1260px;
+    max-height: 1260px;
+    min-height: 1260px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-22h {
+    position: relative;
+    float: left;
+    width: 1320px;
+    height: 1320px;
+    max-height: 1320px;
+    min-height: 1320px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-23h {
+    position: relative;
+    float: left;
+    width: 1380px;
+    height: 1380px;
+    max-height: 1380px;
+    min-height: 1380px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-24h {
+    position: relative;
+    float: left;
+    width: 1440px;
+    height: 1440px;
+    max-height: 1440px;
+    min-height: 1440px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-25h {
+    position: relative;
+    float: left;
+    width: 1500px;
+    height: 1500px;
+    max-height: 1500px;
+    min-height: 1500px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-26h {
+    position: relative;
+    float: left;
+    width: 1560px;
+    height: 1560px;
+    max-height: 1560px;
+    min-height: 1560px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-27h {
+    position: relative;
+    float: left;
+    width: 1620px;
+    height: 1620px;
+    max-height: 1620px;
+    min-height: 1620px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-28h {
+    position: relative;
+    float: left;
+    width: 1680px;
+    height: 1680px;
+    max-height: 1680px;
+    min-height: 1680px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-29h {
+    position: relative;
+    float: left;
+    width: 1740px;
+    height: 1740px;
+    max-height: 1740px;
+    min-height: 1740px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c30-30h {
+    position: relative;
+    float: left;
+    width: 1800px;
+    height: 1800px;
+    max-height: 1800px;
+    min-height: 1800px;
+    overflow: hidden;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-1r {
+    left: 60px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-2r {
+    left: 120px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-3r {
+    left: 180px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-4r {
+    left: 240px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-5r {
+    left: 300px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-6r {
+    left: 360px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-7r {
+    left: 420px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-8r {
+    left: 480px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-9r {
+    left: 540px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-10r {
+    left: 600px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-11r {
+    left: 660px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-12r {
+    left: 720px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-13r {
+    left: 780px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-14r {
+    left: 840px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-15r {
+    left: 900px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-16r {
+    left: 960px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-17r {
+    left: 1020px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-18r {
+    left: 1080px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-19r {
+    left: 1140px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-20r {
+    left: 1200px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-21r {
+    left: 1260px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-22r {
+    left: 1320px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-23r {
+    left: 1380px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-24r {
+    left: 1440px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-25r {
+    left: 1500px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-26r {
+    left: 1560px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-27r {
+    left: 1620px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-28r {
+    left: 1680px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c30-29r {
+    left: 1740px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-1l {
+    left: -60px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-2l {
+    left: -120px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-3l {
+    left: -180px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-4l {
+    left: -240px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-5l {
+    left: -300px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-6l {
+    left: -360px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-7l {
+    left: -420px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-8l {
+    left: -480px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-9l {
+    left: -540px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-10l {
+    left: -600px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-11l {
+    left: -660px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-12l {
+    left: -720px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-13l {
+    left: -780px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-14l {
+    left: -840px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-15l {
+    left: -900px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-16l {
+    left: -960px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-17l {
+    left: -1020px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-18l {
+    left: -1080px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-19l {
+    left: -1140px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-20l {
+    left: -1200px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-21l {
+    left: -1260px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-22l {
+    left: -1320px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-23l {
+    left: -1380px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-24l {
+    left: -1440px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-25l {
+    left: -1500px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-26l {
+    left: -1560px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-27l {
+    left: -1620px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-28l {
+    left: -1680px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c30-29l {
+    left: -1740px;
+  }
+}
+/* 超大螢幕解析 2560px ----------- */
+@media only screen and (min-width: 2540px) {
+  /* line 196, ../sass/_grid.scss */
+  .container, .container-full {
+    width: 2520px;
+    background-color: yellow;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-1 {
+    position: relative;
+    float: left;
+    width: 60px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-2 {
+    position: relative;
+    float: left;
+    width: 120px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-3 {
+    position: relative;
+    float: left;
+    width: 180px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-4 {
+    position: relative;
+    float: left;
+    width: 240px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-5 {
+    position: relative;
+    float: left;
+    width: 300px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-6 {
+    position: relative;
+    float: left;
+    width: 360px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-7 {
+    position: relative;
+    float: left;
+    width: 420px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-8 {
+    position: relative;
+    float: left;
+    width: 480px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-9 {
+    position: relative;
+    float: left;
+    width: 540px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-10 {
+    position: relative;
+    float: left;
+    width: 600px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-11 {
+    position: relative;
+    float: left;
+    width: 660px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-12 {
+    position: relative;
+    float: left;
+    width: 720px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-13 {
+    position: relative;
+    float: left;
+    width: 780px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-14 {
+    position: relative;
+    float: left;
+    width: 840px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-15 {
+    position: relative;
+    float: left;
+    width: 900px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-16 {
+    position: relative;
+    float: left;
+    width: 960px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-17 {
+    position: relative;
+    float: left;
+    width: 1020px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-18 {
+    position: relative;
+    float: left;
+    width: 1080px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-19 {
+    position: relative;
+    float: left;
+    width: 1140px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-20 {
+    position: relative;
+    float: left;
+    width: 1200px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-21 {
+    position: relative;
+    float: left;
+    width: 1260px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-22 {
+    position: relative;
+    float: left;
+    width: 1320px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-23 {
+    position: relative;
+    float: left;
+    width: 1380px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-24 {
+    position: relative;
+    float: left;
+    width: 1440px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-25 {
+    position: relative;
+    float: left;
+    width: 1500px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-26 {
+    position: relative;
+    float: left;
+    width: 1560px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-27 {
+    position: relative;
+    float: left;
+    width: 1620px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-28 {
+    position: relative;
+    float: left;
+    width: 1680px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-29 {
+    position: relative;
+    float: left;
+    width: 1740px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-30 {
+    position: relative;
+    float: left;
+    width: 1800px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-31 {
+    position: relative;
+    float: left;
+    width: 1860px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-32 {
+    position: relative;
+    float: left;
+    width: 1920px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-33 {
+    position: relative;
+    float: left;
+    width: 1980px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-34 {
+    position: relative;
+    float: left;
+    width: 2040px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-35 {
+    position: relative;
+    float: left;
+    width: 2100px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-36 {
+    position: relative;
+    float: left;
+    width: 2160px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-37 {
+    position: relative;
+    float: left;
+    width: 2220px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-38 {
+    position: relative;
+    float: left;
+    width: 2280px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-39 {
+    position: relative;
+    float: left;
+    width: 2340px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-40 {
+    position: relative;
+    float: left;
+    width: 2400px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-41 {
+    position: relative;
+    float: left;
+    width: 2460px;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .c42-42 {
+    position: relative;
+    float: left;
+    width: 2520px;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-1h {
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 60px;
+    max-height: 60px;
+    min-height: 60px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-2h {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 120px;
+    max-height: 120px;
+    min-height: 120px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-3h {
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 180px;
+    max-height: 180px;
+    min-height: 180px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-4h {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 240px;
+    max-height: 240px;
+    min-height: 240px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-5h {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-6h {
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 360px;
+    max-height: 360px;
+    min-height: 360px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-7h {
+    position: relative;
+    float: left;
+    width: 420px;
+    height: 420px;
+    max-height: 420px;
+    min-height: 420px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-8h {
+    position: relative;
+    float: left;
+    width: 480px;
+    height: 480px;
+    max-height: 480px;
+    min-height: 480px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-9h {
+    position: relative;
+    float: left;
+    width: 540px;
+    height: 540px;
+    max-height: 540px;
+    min-height: 540px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-10h {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 600px;
+    max-height: 600px;
+    min-height: 600px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-11h {
+    position: relative;
+    float: left;
+    width: 660px;
+    height: 660px;
+    max-height: 660px;
+    min-height: 660px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-12h {
+    position: relative;
+    float: left;
+    width: 720px;
+    height: 720px;
+    max-height: 720px;
+    min-height: 720px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-13h {
+    position: relative;
+    float: left;
+    width: 780px;
+    height: 780px;
+    max-height: 780px;
+    min-height: 780px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-14h {
+    position: relative;
+    float: left;
+    width: 840px;
+    height: 840px;
+    max-height: 840px;
+    min-height: 840px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-15h {
+    position: relative;
+    float: left;
+    width: 900px;
+    height: 900px;
+    max-height: 900px;
+    min-height: 900px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-16h {
+    position: relative;
+    float: left;
+    width: 960px;
+    height: 960px;
+    max-height: 960px;
+    min-height: 960px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-17h {
+    position: relative;
+    float: left;
+    width: 1020px;
+    height: 1020px;
+    max-height: 1020px;
+    min-height: 1020px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-18h {
+    position: relative;
+    float: left;
+    width: 1080px;
+    height: 1080px;
+    max-height: 1080px;
+    min-height: 1080px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-19h {
+    position: relative;
+    float: left;
+    width: 1140px;
+    height: 1140px;
+    max-height: 1140px;
+    min-height: 1140px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-20h {
+    position: relative;
+    float: left;
+    width: 1200px;
+    height: 1200px;
+    max-height: 1200px;
+    min-height: 1200px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-21h {
+    position: relative;
+    float: left;
+    width: 1260px;
+    height: 1260px;
+    max-height: 1260px;
+    min-height: 1260px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-22h {
+    position: relative;
+    float: left;
+    width: 1320px;
+    height: 1320px;
+    max-height: 1320px;
+    min-height: 1320px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-23h {
+    position: relative;
+    float: left;
+    width: 1380px;
+    height: 1380px;
+    max-height: 1380px;
+    min-height: 1380px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-24h {
+    position: relative;
+    float: left;
+    width: 1440px;
+    height: 1440px;
+    max-height: 1440px;
+    min-height: 1440px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-25h {
+    position: relative;
+    float: left;
+    width: 1500px;
+    height: 1500px;
+    max-height: 1500px;
+    min-height: 1500px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-26h {
+    position: relative;
+    float: left;
+    width: 1560px;
+    height: 1560px;
+    max-height: 1560px;
+    min-height: 1560px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-27h {
+    position: relative;
+    float: left;
+    width: 1620px;
+    height: 1620px;
+    max-height: 1620px;
+    min-height: 1620px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-28h {
+    position: relative;
+    float: left;
+    width: 1680px;
+    height: 1680px;
+    max-height: 1680px;
+    min-height: 1680px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-29h {
+    position: relative;
+    float: left;
+    width: 1740px;
+    height: 1740px;
+    max-height: 1740px;
+    min-height: 1740px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-30h {
+    position: relative;
+    float: left;
+    width: 1800px;
+    height: 1800px;
+    max-height: 1800px;
+    min-height: 1800px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-31h {
+    position: relative;
+    float: left;
+    width: 1860px;
+    height: 1860px;
+    max-height: 1860px;
+    min-height: 1860px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-32h {
+    position: relative;
+    float: left;
+    width: 1920px;
+    height: 1920px;
+    max-height: 1920px;
+    min-height: 1920px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-33h {
+    position: relative;
+    float: left;
+    width: 1980px;
+    height: 1980px;
+    max-height: 1980px;
+    min-height: 1980px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-34h {
+    position: relative;
+    float: left;
+    width: 2040px;
+    height: 2040px;
+    max-height: 2040px;
+    min-height: 2040px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-35h {
+    position: relative;
+    float: left;
+    width: 2100px;
+    height: 2100px;
+    max-height: 2100px;
+    min-height: 2100px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-36h {
+    position: relative;
+    float: left;
+    width: 2160px;
+    height: 2160px;
+    max-height: 2160px;
+    min-height: 2160px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-37h {
+    position: relative;
+    float: left;
+    width: 2220px;
+    height: 2220px;
+    max-height: 2220px;
+    min-height: 2220px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-38h {
+    position: relative;
+    float: left;
+    width: 2280px;
+    height: 2280px;
+    max-height: 2280px;
+    min-height: 2280px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-39h {
+    position: relative;
+    float: left;
+    width: 2340px;
+    height: 2340px;
+    max-height: 2340px;
+    min-height: 2340px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-40h {
+    position: relative;
+    float: left;
+    width: 2400px;
+    height: 2400px;
+    max-height: 2400px;
+    min-height: 2400px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-41h {
+    position: relative;
+    float: left;
+    width: 2460px;
+    height: 2460px;
+    max-height: 2460px;
+    min-height: 2460px;
+    overflow: hidden;
+  }
+
+  /* line 65, ../sass/_grid.scss */
+  .c42-42h {
+    position: relative;
+    float: left;
+    width: 2520px;
+    height: 2520px;
+    max-height: 2520px;
+    min-height: 2520px;
+    overflow: hidden;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-1r {
+    left: 60px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-2r {
+    left: 120px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-3r {
+    left: 180px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-4r {
+    left: 240px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-5r {
+    left: 300px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-6r {
+    left: 360px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-7r {
+    left: 420px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-8r {
+    left: 480px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-9r {
+    left: 540px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-10r {
+    left: 600px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-11r {
+    left: 660px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-12r {
+    left: 720px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-13r {
+    left: 780px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-14r {
+    left: 840px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-15r {
+    left: 900px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-16r {
+    left: 960px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-17r {
+    left: 1020px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-18r {
+    left: 1080px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-19r {
+    left: 1140px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-20r {
+    left: 1200px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-21r {
+    left: 1260px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-22r {
+    left: 1320px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-23r {
+    left: 1380px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-24r {
+    left: 1440px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-25r {
+    left: 1500px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-26r {
+    left: 1560px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-27r {
+    left: 1620px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-28r {
+    left: 1680px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-29r {
+    left: 1740px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-30r {
+    left: 1800px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-31r {
+    left: 1860px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-32r {
+    left: 1920px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-33r {
+    left: 1980px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-34r {
+    left: 2040px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-35r {
+    left: 2100px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-36r {
+    left: 2160px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-37r {
+    left: 2220px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-38r {
+    left: 2280px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-39r {
+    left: 2340px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-40r {
+    left: 2400px;
+  }
+
+  /* line 78, ../sass/_grid.scss */
+  .c42-41r {
+    left: 2460px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-1l {
+    left: -60px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-2l {
+    left: -120px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-3l {
+    left: -180px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-4l {
+    left: -240px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-5l {
+    left: -300px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-6l {
+    left: -360px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-7l {
+    left: -420px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-8l {
+    left: -480px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-9l {
+    left: -540px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-10l {
+    left: -600px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-11l {
+    left: -660px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-12l {
+    left: -720px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-13l {
+    left: -780px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-14l {
+    left: -840px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-15l {
+    left: -900px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-16l {
+    left: -960px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-17l {
+    left: -1020px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-18l {
+    left: -1080px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-19l {
+    left: -1140px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-20l {
+    left: -1200px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-21l {
+    left: -1260px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-22l {
+    left: -1320px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-23l {
+    left: -1380px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-24l {
+    left: -1440px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-25l {
+    left: -1500px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-26l {
+    left: -1560px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-27l {
+    left: -1620px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-28l {
+    left: -1680px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-29l {
+    left: -1740px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-30l {
+    left: -1800px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-31l {
+    left: -1860px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-32l {
+    left: -1920px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-33l {
+    left: -1980px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-34l {
+    left: -2040px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-35l {
+    left: -2100px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-36l {
+    left: -2160px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-37l {
+    left: -2220px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-38l {
+    left: -2280px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-39l {
+    left: -2340px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-40l {
+    left: -2400px;
+  }
+
+  /* line 85, ../sass/_grid.scss */
+  .c42-41l {
+    left: -2460px;
+  }
+}
+/* iPhone 4 480px 橫式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* iPhone 4 320 直式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* iPhone 5 568px 橫式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* iPhone 5 320px 直式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* iPhone 6 667px 橫式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* iPhone 6 375px 直式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* iPhone 6+ 736px 橫式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* iPhone 6+ 414px 直式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}

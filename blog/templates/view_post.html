@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% block head_title %}{{ post.title }}{% endblock %}
+
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="c-12">
+            <h1>
+            {{ post.title }}
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="c-6 c12-6 c16-8 c20-10 c26-13 c30-15">
+            {{ post.body }}
+        </div>
+        <div class="c-6 c12-6 c16-8 c20-10 c26-13 c30-15">
+            {% load webdesign %}
+            {% lorem 200 w %}
+            <input type="text" name="" id="">
+            {% lorem 50 w %}
+            <input type="email" name="" id="">
+            {% lorem 50 w %}
+            <input type="tel" name="" id="">
+            {% lorem 50 w %}
+            <input type="number" name="" id="">
+            {% lorem 50 w %}
+            <input type="password" name="" id="">
+            {% lorem 50 w %}
+            <input type="date" name="" id="">
+            {% lorem 50 w %}
+            <input type="search" name="" id="">
+            {% lorem 50 w %}
+            <input type="checkbox" name="" id="">
+            {% lorem 50 w %}
+            <input type="radio" name="" id="">
+            {% lorem 50 w %}
+            <button value="測試">夾測試</button>
+            {% lorem 50 w %}
+            <textarea>{% lorem 20 w %}</textarea>
+            {% lorem 50 w %}
+            <select>
+                <option selected="">夾測試</option>
+                <option>夾測試</option>
+            </select>
+            {% lorem 50 w %}
+            <ul>
+                <li>{% lorem 10 w %}</li>
+                <li>{% lorem 20 w %}</li>
+                <li>{% lorem 5 w %}</li>
+                <li>{% lorem 15 w %}</li>
+                <li>{% lorem 5 w %}</li>
+            </ul>
+            {% lorem 50 w %}
+            <ol>
+                <li>{% lorem 10 w %}</li>
+                <li>{% lorem 20 w %}</li>
+                <li>{% lorem 5 w %}</li>
+                <li>{% lorem 15 w %}</li>
+                <li>{% lorem 5 w %}</li>
+            </ol>
+            {% lorem 50 w %}
+        </div>{# end col6 #}
+    </div>{# end row #}
+    <div class="row">
+        <div class="c12-1h c16-2h c20-5h c26-6h c30-6h c20-6r">
+            {% lorem 100 w %}
+        </div>
+    </div>{# end row #}
+    <div class="row">
+        <div class="c12-3 c16-4 c20-5 c26-6 c30-8">
+            {% lorem 100 w %}
+        </div>
+        <div class="c12-1 c16-2 c20-5h c26-6h c30-6h c30r-1">
+            {% lorem 100 w %}
+        </div>
+        <div class="c12-1h c16-2h c20-4 c26-5 c30-6">
+            {% lorem 100 w %}
+        </div>
+        <div class="c12-1 c16-2 c20-6h c26-6h c30-10h">
+            {% lorem 300 w %}
+        </div>
+    </div>{# end row #}
+    <div class="row">
+        <div class="c12-6">
+            <div class="row">
+                <div class="c-3">
+                {% lorem 10 w %}
+                </div>
+                <div class="c-3">
+                {% lorem 10 w %}
+                </div>
+            </div>
+        </div>
+        <div class="c12-1">
+            {% lorem 10 w %}
+        </div>
+        <div class="c12-1">
+            {% lorem 10 w %}
+        </div>
+        <div class="c12-1">
+            {% lorem 10 w %}
+        </div>
+    </div>{# end row #}
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+
+// 有載入順序
+//先讀參數
+@import "_paras.scss";
+// 基本設定含reset
+@import "_base.scss";
+// 字體設定
+@import "_fonts.scss";
+// 表單設定
+@import "_form.scss";
+// 網格系統
+@import "_grid.scss";

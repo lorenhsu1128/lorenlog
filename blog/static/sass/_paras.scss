@@ -1,0 +1,51 @@
+
+
+// 字體
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,400italic,700,700italic);
+$f-stack : Helvetica, 'Source Sans Pro', sans-serif;
+$f-space : 0.125rem;//2px
+$f-basesize : 18px;
+$f-size : 1.125rem;//16px=1rem
+$f-line-height : $f-size*1.5;
+$f-200 : 200;
+$f-400 : 400;
+$f-700 : 700;
+
+// 顏色設定
+$f-color : rgba(0, 0, 0, 1.0);
+$link-color : rgba(0, 0, 0, 1.0);
+
+
+// div長寬比定義
+@mixin aspect-ratio($ratio-or-width, $height: null) {
+    $padding: if($height, percentage($height/$ratio-or-width), percentage(1/$ratio-or-width));
+    &:before {
+        content:'';
+        float: left;
+        padding-bottom: $padding;
+    }
+    &:after {
+        content:'';
+        display: table;
+        clear: both;
+    }
+}
+
+// 自動換圖@2X的class
+// #logo {
+//   @include at2x('/images/my_image','png', 200px, 100px);
+// }
+@mixin at2x($path, $ext: 'jpg', $w: auto, $h: auto) {
+  $at1x_path: '#{$path}.#{$ext}';
+  $at2x_path: '#{$path}@2x.#{$ext}';
+
+  background-image: url("#{$at1x_path}");
+
+  @media all and (-webkit-min-device-pixel-ratio : 1.5),
+         all and (-o-min-device-pixel-ratio: 3/2),
+         all and (min--moz-device-pixel-ratio: 1.5),
+         all and (min-device-pixel-ratio: 1.5) {
+           background-image: url('#{$at2x_path}');
+           background-size: $w $h;
+  }
+}

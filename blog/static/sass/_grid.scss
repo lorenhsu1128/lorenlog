@@ -1,0 +1,269 @@
+// Micro Clearfix
+.clear:before, .clear:after { content: " "; display: table; } .clear:after { clear: both; }
+.row:before, .row:after { content: ""; display: table; } .row:after { clear: both; }
+
+.row {
+    position: relative;
+
+}
+
+// 手機與預設版 container
+.container {
+
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+.container-full {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+    overflow-x: hidden;
+}
+
+@mixin grid-100($columns: 12) {
+
+    // 一般網格與手機版通用 解析
+    @for $i from 1 through $columns {
+        .c-#{$i} {
+            position: relative;
+            float: left;
+            width: ($i / $columns) * 100%;
+        }
+    }
+
+    // 右推
+    @for $i from 1 through $columns - 1 {
+        .r-#{$i} {
+            left: ($i / $columns) * 100%;
+        }
+    }
+
+    // 左拉
+    @for $i from 1 through $columns - 1 {
+        .l-#{$i} {
+            left: -($i / $columns) * 100%;
+      }
+    }
+}
+
+
+@mixin grid-60($grid-width: 60px, $columns: 20) {
+
+    // 不定高columns
+    @for $i from 1 through $columns {
+        .c#{$columns}-#{$i} {
+            position: relative;
+            float: left;
+            width: $i * $grid-width;
+        }
+    }
+
+    @for $i from 1 through $columns {
+        .c#{$columns}-#{$i}h {
+            position: relative;
+            float: left;
+            width: $i * $grid-width;
+            height: $i * $grid-width;
+            max-height: $i * $grid-width;
+            min-height: $i * $grid-width;
+            overflow: hidden;
+        }
+    }
+
+    // 右推
+    @for $i from 1 through $columns - 1 {
+        .c#{$columns}-#{$i}r {
+            left: $i * $grid-width;
+        }
+    }
+
+    // 左拉
+    @for $i from 1 through $columns - 1 {
+        .c#{$columns}-#{$i}l {
+            left: - $i * $grid-width;
+      }
+    }
+}
+
+
+/* Smartphones 橫式 ----------- */
+@media only screen and (min-width : 321px) {
+    .container, .container-full {
+        width: 100%;
+    }
+    @include grid-100(12);
+
+}
+
+/* Smartphones 直式 ----------- */
+@media only screen and (max-width : 320px) {
+    .container, .container-full {
+        width: 100%;
+    }
+    @include grid-100(12);
+}
+
+/* iPads 768 x 1024 直式橫式 ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .container, .container-full {
+        width: 100%;
+    }
+    @include grid-60(60px, 16);
+}
+
+/* iPads 1024 橫式 ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .container, .container-full {
+        width: 60px*16;//960
+    }
+    @include grid-60(60px, 16);
+}
+
+/* iPads 768 直式 ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .container, .container-full {
+        width: 60px*12;//720
+    }
+    @include grid-60(60px, 12);
+}
+
+/* iPad3 1024 橫式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    .container, .container-full {
+        width: 60px*16;//960
+    }
+    @include grid-60(60px, 16);
+}
+
+/* iPad3 768 直式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    .container, .container-full {
+        width: 60px*12;//720
+    }
+    @include grid-60(60px, 12);
+}
+
+/* 一般桌面解析 1024px ----------- */
+@media only screen and (min-width : 760px) {
+    .container, .container-full {
+        width: 60px*12;//720
+        background-color: green;
+    }
+    @include grid-60(60px, 12);
+}
+
+/* 一般桌面解析 1024px ----------- */
+@media only screen and (min-width : 1020px) {
+    .container, .container-full {
+        width: 60px*16;//960
+        background-color: red;
+    }
+    @include grid-60(60px, 16);
+}
+
+/* 一般桌面解析 1280px ----------- */
+@media only screen  and (min-width : 1224px) {
+    .container, .container-full {
+        width: 60px*20;//1200
+        background-color: blue;
+    }
+    @include grid-60(60px, 20);
+}
+
+/* 一般桌面解析 1680px ----------- */
+@media only screen  and (min-width : 1600px) {
+    .container, .container-full {
+        width: 60px*26;//1560
+        background-color: blue;
+    }
+    @include grid-60(60px, 26);
+}
+
+/* 大螢幕解析 1920px ----------- */
+@media only screen  and (min-width : 1880px) {
+    .container, .container-full {
+        width: 60px*30;//1800
+        background-color: yellow;
+    }
+    @include grid-60(60px, 30);
+}
+
+/* 超大螢幕解析 2560px ----------- */
+@media only screen  and (min-width : 2540px) {
+    .container, .container-full {
+        width: 60px*42;//2520
+        background-color: yellow;
+    }
+    @include grid-60(60px, 42);
+}
+
+
+/* iPhone 4 480px 橫式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* iPhone 4 320 直式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* iPhone 5 568px 橫式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 5 320px 直式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6 667px 橫式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6 375px 直式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6+ 736px 橫式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6+ 414px 直式 加入螢幕解析放大----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
