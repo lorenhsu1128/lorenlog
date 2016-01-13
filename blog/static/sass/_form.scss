@@ -17,13 +17,12 @@ input[type="search"] {
     border: 1px solid rgba(0,0,0,0.7);
     -webkit-appearance: none;
     -moz-appearance: textfield;
-    -webkit-border-radius: 0;
-    border-radius: 0;
+    @include border-radius(0px, 0px);
     width: 100%;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
@@ -57,8 +56,7 @@ textarea{
     border: 1px solid rgba(0,0,0,1.0);
     -webkit-appearance: none;
     -moz-appearance: textfield;
-    -webkit-border-radius: 0;
-    border-radius: 0;
+    @include border-radius(0px, 0px);
     overflow: auto;
     width: 100%;
 
@@ -74,7 +72,7 @@ select {
     font-weight: $f-200;
     letter-spacing: $f-space;
     border: 1px solid rgba(0,0,0,1.0);
-    -webkit-border-radius: 0;
+    @include border-radius(0px, 0px);
     border-radius: 0;
 }
 
@@ -94,9 +92,80 @@ button {
     overflow: visible;
     text-transform: none;
 }
-button[disabled], html input[disabled] { cursor: default; }
+button[disabled], html input[disabled] {
+    cursor: default;
+}
 button::-moz-focus-inner,
 input::-moz-focus-inner {
     border: 0;
     padding: 0;
+}
+
+a.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    @include border-radius(4px, 4px);
+    @include box-shadow(rgba(0,0,0,0.03) 0 0 0 1px, inset);
+}
+
+/* 一般桌面解析 1024px 以上----------- */
+@media only screen and (min-width : 760px){
+    a.button:after, button:after, input[type="submit"]:after, input[type="reset"]:after, input[type="button"]:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        z-index: 1;
+        background: rgba(0,0,0,0.05);
+        @include transition-property(all);
+        @include transition-duration(0.3s);
+    }
+    a:hover.button {
+        text-decoration: none;
+    }
+    a.button:hover:after, button:hover:after, input[type="submit"]:hover:after, input[type="reset"]:hover:after, input[type="button"]:hover:after {
+        width: 100%;
+    }
+}
+
+
+.button-line {}
+.button-line a.button,
+.button-line button,
+.button-line input[type="submit"],
+.button-line input[type="reset"],
+.button-line input[type="button"] {
+    border-width: 2px;
+    border-style: solid;
+    @include border-radius(4px, 4px);
+    @include box-shadow(rgba(0,0,0,0.03) 0 0 0 0px, inset);
+    background-color: transparent !important;
+    background-image: none;
+}
+
+.button-line a:hover.button,
+.button-line button:hover,
+.button-line input[type="submit"]:hover,
+.button-line input[type="reset"]:hover,
+.button-line input[type="button"]:hover {
+
+}
+
+
+/* 一般桌面解析 1024px 以上----------- */
+@media only screen and (min-width : 760px){
+    .button-line a.button:after,
+    .button-line button:after,
+    .button-line input[type="submit"]:after,
+    .button-line input[type="reset"]:after,
+    .button-line input[type="button"]:after {
+        background: rgba(0,0,0,0.1);
+        @include transition-property(all);
+        @include transition-duration(0.3s);
+    }
 }

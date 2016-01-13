@@ -15,6 +15,7 @@ $f-700 : 700;
 $f-color : rgba(0, 0, 0, 1.0);
 $link-color : rgba(0, 0, 0, 1.0);
 
+$header-height : 80px;
 
 // div長寬比定義
 @mixin aspect-ratio($ratio-or-width, $height: null) {

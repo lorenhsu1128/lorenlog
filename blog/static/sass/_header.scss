@@ -1,0 +1,59 @@
+
+/* 一般桌面解析 1024px 以上----------- */
+@media only screen and (min-width : 760px) {
+    // 主選單
+    .header{
+
+    }
+
+    .header .main-menu {
+        display: block;
+        height: $header-height;
+        z-index: 202;
+        background-color: red;
+        width: 100%;
+        position: fixed;
+    }
+
+    .header .main-menu > li {
+        margin: 0;
+        z-index: 203;
+        display: block;
+        position: relative;
+        float: left;
+    }
+
+    .header .main-menu > li:hover {
+        z-index: 204;
+    }
+
+    // 子選單
+    .header .main-menu li > ul {
+        background-color: white;
+        position: absolute;
+        display: block;
+        width: 15rem;
+        left: 0px;
+        top: 100%;
+        z-index: 205;
+        margin: 0;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        @include transition-property(all);
+        @include transition-timing-function(ease);
+        @include transition-duration(0.3s);
+        @include box-shadow(rgba(0,0,0, 0.4) 0 0 25px, rgba(0,0,0, 0.2) 0 0 3px 1px);
+
+    }
+    .header .main-menu li:hover > ul {
+        opacity: 1;
+        visibility: visible;
+        overflow: visible;
+    }
+
+    .header .main-menu li > ul li {
+        list-style: none;
+        margin: 0;
+    }
+}

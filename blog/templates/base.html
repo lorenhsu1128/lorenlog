@@ -32,12 +32,41 @@
 
         <!-- Color the status bar on mobile devices -->
         <meta name="theme-color" content="#FFFFFF">
-        
+
         <link rel="stylesheet" href="{% static 'css/code_highlight.min.css' %}">
         <link rel="stylesheet" media="screen, projection" href="{% static 'css/screen.css' %}">
 
     </head>
     <body>
+        <header class='header'>
+            <ul class="main-menu">
+                <li><a href="">主選單一單</a></li>
+                <li>
+                    <a href="">主選單二選單</a>
+                    <ul class="sub-menu">
+                        <li><a href="">三主選單</a></li>
+                        <li><a href="">單四主選</a></li>
+                        <li><a href="">主選單五主選</a></li>
+                        <li><a href="">主選單六</a></li>
+                        <li><a href="">主選單七選單</a></li>
+                    </ul>
+                </li>
+                <li><a href="">三主選單</a></li>
+                <li>
+                    <a href="">單四主選</a>
+                    <ul class="sub-menu">
+                        <li><a href="">三主選單</a></li>
+                        <li><a href="">單四主選</a></li>
+                        <li><a href="">主選單五主選</a></li>
+                        <li><a href="">主選單六</a></li>
+                        <li><a href="">主選單七選單</a></li>
+                    </ul>
+                </li>
+                <li><a href="">主選單五主選</a></li>
+                <li><a href="">主選單六</a></li>
+                <li><a href="">主選單七選單</a></li>
+            </ul>
+        </header>
     {% autoescape off %}
     <!-- Add your site or app content here -->
         {% block content %}
